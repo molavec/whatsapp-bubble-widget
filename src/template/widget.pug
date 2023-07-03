@@ -1,0 +1,17 @@
+//- Definicion del Widget
+//- <div id="exit-intent-bubble-widget"
+//-   data-wpp-phone="56974864665"
+//-   data-wpp-message="Hola! Me pueden ayudar?"
+//-   data-wpp-tooltip-message="Hola! Puedo ayudarte si haces Click aquí"
+//-   data-wpp-image-src="../assets/img/WhatsApp-icon.png" >
+//- </div>
+
+
+div.wpb-block
+  .wpb-block__link(aria-describedby="tooltip")
+    a(href="" target="_blank")
+      img.wpb-block__image(alt="Chatear" width="80px" height="80px")
+    .wpb-block__notification
+      | 1
+  .wpb-tooltip(role="tooltip")
+    .wpb-tooltip__arrow(x-arrow="")

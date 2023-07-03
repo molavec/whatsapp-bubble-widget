@@ -1,0 +1,28 @@
+{
+  "name": "whatsapp-bubble-widget",
+  "version": "1.0.0",
+  "description": "Whatsapp Bubble widget",
+  "source": "src/index.js",
+  "main":"dist/wpb.js",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "example": "parcel ./example/index.html",
+    "clear": "rm -rf .parcel-cache && rm -rf dist && rm -rf node_modules && yarn install"
+  },
+  "keywords": [
+    "whatsapp",
+    "widget",
+    "html"
+  ],
+  "author": "Miguel Olave <molavec@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "2.9.3",
+    "@parcel/transformer-pug": "2.9.3",
+    "parcel": "^2.9.3"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.4.3"
+  }
+}

@@ -1,0 +1,92 @@
+.wpb-block {
+  position: fixed;
+  bottom: 2px;
+  right: 10px;
+  height: auto;
+  width: 100px;
+  text-align: center;
+  z-index: 9;
+}
+
+.wpb-block__image {
+  border-radius: 60px;
+  -moz-border-radius: 60px;
+ }
+
+.wpb-block__notification {
+  position: absolute;
+  background: red;
+  top: 0px;
+  right: 1px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+  width: 20px;
+  padding: 5px 0;
+  line-height: 10px;
+  display: none;
+  z-index: 9999;
+}
+
+.tooltip-shown .wpb-block__notification {
+  display: block;
+}
+
+.wpb-tooltip {
+  width: max-content;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background: #222;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 90%;
+}
+
+.wpb-tooltip__arrow {
+  position: absolute;
+  background: #24f;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+/**
+ * Se oculta el btn messenger de Spotify
+ */
+#messageus_button {
+  display: none;
+}
