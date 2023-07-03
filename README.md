@@ -18,7 +18,7 @@ Add `whatsapp-bubble-widget container` and `wpb script` before `</body>` close t
   tooltip-message="Hi, Ask me anything!"
 >
 </div>
-<script src="../dist/wpb.[id compilado].min.js"></script>
+<script src="../dist/wpb-[id compilado].js"></script>
 ```
 
 ## Attributes
